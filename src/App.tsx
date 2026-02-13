@@ -57,7 +57,7 @@ const PlayerDetail = () => {
 
 function App() {
   return (
-    <Router>
+    <Router basename='/album'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/player/:id" element={<PlayerDetail />} />
