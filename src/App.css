@@ -1,32 +1,27 @@
-/* 1. Contenedor principal para centrar todo el contenido en la pantalla */
 .album-container {
-  max-width: 1000px;    /* Evita que el álbum se estire demasiado en pantallas anchas */
-  margin: 0 auto;       /* EL TRUCO: Centra el bloque horizontalmente */
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 40px 20px;
-  text-align: center;   /* Centra el título y textos internos */
+  text-align: center;
 }
 
-/* 2. Título con estilo Panini */
 .album-title {
   color: #ffd700;
   font-size: 2.5rem;
   font-family: 'Arial Black', sans-serif;
   margin-bottom: 30px;
-  text-shadow: 2px 2px 0px #000; /* Sombra para que resalte del verde */
+  text-shadow: 2px 2px 0px #000; 
   text-transform: uppercase;
 }
 
-/* 3. Cuadrícula centrada */
 .album-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 25px;
-  justify-content: center; /* Centra las columnas si sobran espacios */
+  justify-content: center; 
   padding: 20px;
-  /* Quitamos el min-height y el background de aquí para ponerlo en el body o root */
 }
 
-/* Aplicar el fondo verde al fondo total para que no se corte */
 body {
   background-color: #1a472a;
   margin: 0;
@@ -42,7 +37,7 @@ body {
   transition: transform 0.2s;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   color: #333;
-  display: flex;          /* Flexbox interno para centrar contenido */
+  display: flex;         
   flex-direction: column;
   align-items: center;
 }
@@ -54,12 +49,11 @@ body {
 
 .card img {
   width: 100%;
-  height: 200px;       /* Altura fija para que todas las láminas sean iguales */
-  object-fit: cover;   /* Evita que la foto se estire feo */
+  height: 200px;       
+  object-fit: cover;   
   border-radius: 4px;
 }
 
-/* Vista de detalle */
 .detail-view {
   display: flex;
   justify-content: center;
@@ -79,7 +73,6 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* Estilo para los enlaces (quitar el azul subrayado) */
 a {
   text-decoration: none;
   color: inherit;
